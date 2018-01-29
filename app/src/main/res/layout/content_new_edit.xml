@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mjwenn.simpletodo.NewEditActivity"
+    tools:showIn="@layout/activity_new_edit"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:textStyle="bold"
+                android:text="Task"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/ettask"
+                android:background="@android:drawable/edit_text"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:text="Description"/>
+            <EditText
+                android:id="@+id/etdescription"
+                android:background="@android:drawable/edit_text"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:text="Priority"/>
+            <Spinner
+                android:id="@+id/sppriorite"
+                android:entries="@array/priority_level"/>
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:text="Due date"/>
+            <DatePicker
+android:theme="@style/AlertDialog.AppCompat.Light"
+                android:id="@+id/dtduedate"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

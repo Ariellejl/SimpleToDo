@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mjwenn.simpletodo.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView android:text="Task"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/tvtask_details" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView android:text="Description"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/tvdesc_details" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView android:text="Due date"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/tvpriority_details" />
+        </TableRow>
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView android:text="Priority"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/tvdate_details" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

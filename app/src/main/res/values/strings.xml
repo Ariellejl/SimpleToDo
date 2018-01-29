@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleToDo</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_new_edit">NewEditActivity</string>
+
+    <string-array name="priority_level">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>
